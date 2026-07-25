@@ -3,7 +3,7 @@
 
 <p align="center">
 
-<img src="images/architecture.png" width="100%">
+<img src="snapshots/Walmart Retail Data Platform Architecture.png" width="100%">
 
 </p>
 
@@ -50,7 +50,7 @@ The platform ingests operational retail data from PostgreSQL using CDC and strea
 
 <p align="center">
 
-<img src="images/architecture.png">
+<img src="snapshots/Walmart Retail Data Platform Architecture.png">
 
 </p>
 
@@ -182,7 +182,7 @@ Models
 
 <p align="center">
 
-<img src="images/customer_dashboard.png">
+<img src="snapshots/Retail Customer And Store Analytics Dashboard.png">
 
 </p>
 
@@ -201,7 +201,7 @@ Features
 
 <p align="center">
 
-<img src="images/sales_dashboard.png">
+<img src="snapshots/Sales & Product Performance Dashboard.png">
 
 </p>
 
@@ -220,7 +220,7 @@ Features
 
 <p align="center">
 
-<img src="images/airflow_dag.png">
+<img src="snapshots/Airflow DAG Only Graph View .png">
 
 </p>
 
