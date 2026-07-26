@@ -50,7 +50,7 @@ The platform ingests operational retail data from PostgreSQL using CDC and strea
 
 <p align="center">
 
-<img src="snapshots/Walmart Retail Data Platform Architecture.png">
+<img src="snapshots/Walmart Retail Data Platform Architecture.png" width="85%">
 
 </p>
 
@@ -182,7 +182,7 @@ Models
 
 <p align="center">
 
-<img src="snapshots/Retail Customer And Store Analytics Dashboard.png">
+<img src="snapshots/Retail Customer And Store Analytics Dashboard.png" width="95%">
 
 </p>
 
@@ -201,7 +201,7 @@ Features
 
 <p align="center">
 
-<img src="snapshots/Sales & Product Performance Dashboard.png">
+<img src="snapshots/Sales & Product Performance Dashboard.png" width="95%">
 
 </p>
 
@@ -252,27 +252,41 @@ semantic_metrics
 
 ---
 
-# 📁 Project Structure
+
+---
+
+## 8. Update project structure
+
+Since your repo actually looks like this:
 
 ```text
-walmart-retail-platform/
-
+retail-lakehouse-platform/
 │
-├── airflow/
+├── airflow_dbt_project/
+│   ├── config/
+│   ├── dags/
+│   ├── walmart_project/
+│   ├── docker-compose.yaml
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── .env
 │
-├── dbt_project/
-│   ├── silver_t/
-│   ├── silver_b/
-│   ├── gold/
-│   └── semantic/
+├── walmart_dataset/
+│   ├── data/
+│   ├── ddl/
+│   └── load_data.py
 │
-├── dashboards/
+├── snapshots/
+│   ├── Walmart Retail Data Platform Architecture.png
+│   ├── Airflow DAG Only Graph View .png
+│   ├── Retail Customer And Store Analytics Dashboard.png
+│   ├── Sales & Product Performance Dashboard.png
+│   └──  Airflow DAG Graph and task View .png
+│ 
 │
-├── architecture/
-│
-├── datasets/
-│
-└── README.md
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
