@@ -91,7 +91,13 @@ def orchestrate():
          bash_command='dbt run --select gold/facts'
     )
 
-    ingest_cdc() >> clean_target() >> source_freshness() >> silver_technical >> silver_technical_tests >> silver_business >> silver_business_tests >> gold_ephemeral >> gold_dimensions >> gold_facts
+      semantic_metrics = BashOperator(
+         task_id='semantic_metrics',
+         cwd = '/opt/airflow/walmart_project',
+         bash_command='dbt run --select semantic'
+    )     
+
+    ingest_cdc() >> clean_target() >> source_freshness() >> silver_technical >> silver_technical_tests >> silver_business >> silver_business_tests >> gold_ephemeral >> gold_dimensions >> gold_facts >> semantic_metrics
 
 
 orchestrate_dag = orchestrate()
