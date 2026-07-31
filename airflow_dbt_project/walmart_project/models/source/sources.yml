@@ -9,6 +9,11 @@ sources:
       - name: stores
       - name: order_items
       - name: employees
+  - name: walmart_gold
+    database: walmart  
+    schema: gold  
+    tables:
+      - name: reviews
 
 
 
