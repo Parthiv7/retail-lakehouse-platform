@@ -43,6 +43,9 @@ models:
       +schema: gold
       ephemeral:
         +materialized: ephemeral
+    semantic:
+      +materialized: view
+      +schema: semantic
 
         
       
