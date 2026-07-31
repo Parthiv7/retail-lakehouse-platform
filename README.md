@@ -3,7 +3,7 @@
 
 <p align="center">
 
-<img src="snapshots/Walmart Retail Data Platform Architecture.png" width="100%">
+<img src="docs/Walmart Retail Data Platform Architecture.png" width="100%">
 
 </p>
 
@@ -50,7 +50,7 @@ The platform ingests operational retail data from PostgreSQL using CDC and strea
 
 <p align="center">
 
-<img src="snapshots/Walmart Retail Data Platform Architecture.png" width="85%">
+<img src="docs/Walmart Retail Data Platform Architecture.png" width="85%">
 
 </p>
 
@@ -182,7 +182,7 @@ Models
 
 <p align="center">
 
-<img src="snapshots/Retail Customer And Store Analytics Dashboard.png" width="95%">
+<img src="docs/Retail Customer And Store Analytics Dashboard.png" width="95%">
 
 </p>
 
@@ -201,7 +201,7 @@ Features
 
 <p align="center">
 
-<img src="snapshots/Sales & Product Performance Dashboard.png" width="95%">
+<img src="docs/Sales & Product Performance Dashboard.png" width="95%">
 
 </p>
 
@@ -220,7 +220,7 @@ Features
 
 <p align="center">
 
-<img src="snapshots/Airflow DAG Only Graph View .png">
+<img src="docs/Airflow DAG Only Graph View .png">
 
 </p>
 
@@ -262,7 +262,7 @@ Since your repo actually looks like this:
 ```text
 retail-lakehouse-platform/
 │
-├── airflow_dbt_project/
+├── analytics_engineering/
 │   ├── config/
 │   ├── dags/
 │   ├── walmart_project/
@@ -276,7 +276,7 @@ retail-lakehouse-platform/
 │   ├── ddl/
 │   └── load_data.py
 │
-├── snapshots/
+├── docs/
 │   ├── Walmart Retail Data Platform Architecture.png
 │   ├── Airflow DAG Only Graph View .png
 │   ├── Retail Customer And Store Analytics Dashboard.png
